@@ -42,3 +42,12 @@ My school 42 C++ projects, module 00
 - Display Account Information: Implement methods to display the status of each account and global statistics about all accounts.
 - Manage Transaction Times: Include a function that displays the current timestamp for each transaction, helping to track when transactions are made.
 - Test Functionality: Develop a main program that creates multiple accounts, performs deposits and withdrawals, and then displays account information and global statistics.
+
+
+# Extras
+
+These exercises have provided a practical and in-depth understanding of several important aspects of C++ programming. Solutions to real-world problems have been implemented, from basic string and data structure manipulation to the simulation of more complex financial transactions. Each exercise contributed to the development of key skills in program design, data management, and user interaction. The experience gained in these exercises provides a solid foundation for tackling more advanced programming challenges and developing more complex applications in C++.
+
+-Born2code
+
+![42madrid](https://github.com/ismaelucky342/Born2code/assets/153450550/3a377f34-9156-4eff-b04b-71c4b128523e)
