@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   megaphone.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/09 17:09:26 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/02/15 19:45:05 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,13 @@ char    ft_toupper(char c)
     return (c);
 }
 
-int	main(int ac, char **av)
+int	main(int argc, char **argv)
 {
-    if (ac < 2)
+    if (argc < 2)
         std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
     else
-        for (int i = 1; i < ac; i++)
-        {
-            for (int j = 0; av[i][j] != '\0'; j++)
-                std::cout << ft_toupper(av[i][j]);
-        }
+        for (int i = 1; i < argc; i++)
+        	for (int j = 0; argv[i][j] != '\0'; j++)
+                std::cout << ft_toupper(argv[i][j]);
     std::cout << std::endl;
 }

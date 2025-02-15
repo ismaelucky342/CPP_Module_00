@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/09 17:13:40 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/02/15 19:51:08 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,17 @@ int	main(){
 	{
 		std::cout << "Waitting for instruction ...\n";
 		std::getline(std::cin, tem);
+		
 		if (tem == "ADD"){
+			
 			for (int i = 0; i < 5; i ++){
+				
 				std::cout << msg[i];
 				std::getline(std::cin, info[i]);
+				
 				if (info[i] == "EXIT")
 					return 0;
+					
 				while (info[i] == "" || (i == 3 && !phonebook.check_nbr(info[i]))){
 					std::cout << "Not valid, please write the info valid:\n";
 					std::cout << msg[i];
@@ -45,8 +50,10 @@ int	main(){
 		else if (tem == "SEARCH"){
 			std::cout << "Index: ";
 			std::getline(std::cin, tem);
+			
 			if (tem == "EXIT")
 					return 0;
+			
 			while (tem == "" || !phonebook.check_nbr(tem)){
 				std::cout << "Not valid!!!\n";
 				std::cout << "Index: ";

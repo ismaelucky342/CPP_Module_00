@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   P_book.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/09 17:14:18 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/02/15 19:54:54 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void	Book::info_serch(std::string cindex){
 	iss >> index;
 	if (index < 0 || index > 7)
 		std::cout << "Invalid index !" << std::endl;
-	if (people[index].is_null == false)
+	else if (people[index].is_null == false)
 		std::cout << "There are not infomation!" << std::endl;
 	else
 		info_print (index);
