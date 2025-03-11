@@ -6,14 +6,20 @@
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/11 17:53:13 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/03/11 18:15:19 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef P_BOOK_HPP
 #define P_BOOK_HPP
+
+/*=================================INCLUDES=================================*/
+
 #include "contact.hpp"
 #include <string>
+
+/*=================================DEFINES=================================*/
+
 #define FNAME "First Name: "
 #define LNAME "Last Name: "
 #define NNAME "Nick Name: "
@@ -21,6 +27,8 @@
 #define SEC "Secret: "
 
 std::string truncate(const std::string &str);
+
+/*=================================CLASS BOOK================================*/
 
 class Book
 {

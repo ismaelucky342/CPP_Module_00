@@ -6,7 +6,7 @@
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/11 17:53:44 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/03/11 18:21:24 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,7 @@ int main()
 		else if (tem == "SEARCH")
 		{
 			phonebook.print_agenda(); 
-			std::cout << ":\n";
-			std::cout << "Index: ";
+			std::cout << GREEN "➡️ Insert Index: " RESET;
 			std::getline(std::cin, tem);
 
 			if (tem == "EXIT")
@@ -62,8 +61,8 @@ int main()
 
 			while (tem == "" || !phonebook.check_nbr(tem))
 			{
-				std::cout << "Not valid!!!\n";
-				std::cout << "Index: ";
+				std::cout << RED "ERROR: Not valid!!!\n" RESET;
+				std::cout << GREEN "➡️ Insert Index: " RESET;
 				std::getline(std::cin, tem);
 				if (tem == "EXIT")
 					return 0;

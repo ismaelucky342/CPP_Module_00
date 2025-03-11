@@ -6,7 +6,7 @@
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/11 17:53:18 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/03/11 18:23:24 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,7 @@ void	Book::info_print(int index){
 
 	std::cout << std::endl;
 	std::cout << std::right;
-	std::cout << std::setw(10) << "Index" << '|'
-			  << std::setw(10) << "FirstName:" << '|'
-			  << std::setw(10) << "LastName:" << '|'
-			  << std::setw(10) << "NickName:" << '|' << std::endl;
+	std::cout << std::setw(10) << "✅ Contact Found: "; 
 	std::cout << std::setw(10) << people[index].index << '|'
 			  << std::setw(10) << truncate(people[index].first_name) << '|'
 			  << std::setw(10) << truncate(people[index].last_name) << '|'
@@ -48,10 +45,10 @@ std::string truncate(const std::string &str){
 void Book::print_agenda() {
 	std::cout << std::endl;
 	std::cout << std::right;
-	std::cout << std::setw(10) << "Index" << '|'
+	std::cout << std::setw(10) << B_CYAN "|" <<  "Index" << '|'
 			  << std::setw(10) << "FirstName:" << '|'
 			  << std::setw(10) << "LastName:" << '|'
-			  << std::setw(10) << "NickName:" << '|' << std::endl;
+			  << std::setw(10) << "NickName:" << "|" RESET << std::endl;
 	for (int i = 0; i < 8; i++) {
 		if (people[i].is_null) {
 			std::cout << std::setw(10) << people[i].index << '|'
