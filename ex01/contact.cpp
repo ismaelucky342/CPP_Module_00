@@ -6,7 +6,7 @@
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/11 17:44:59 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/03/11 17:53:44 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int main()
 		}
 		else if (tem == "SEARCH")
 		{
-			phonebook.info_print(); 
+			phonebook.print_agenda(); 
 			std::cout << ":\n";
 			std::cout << "Index: ";
 			std::getline(std::cin, tem);

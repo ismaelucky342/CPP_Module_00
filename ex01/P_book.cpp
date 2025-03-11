@@ -6,7 +6,7 @@
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/11 17:46:40 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/03/11 17:53:18 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,22 @@ std::string truncate(const std::string &str){
     return str.length() > 9 ? str.substr(0, 9) + "." : str;
 }
 
-void Book::print_agenda(void) {
-	
+void Book::print_agenda() {
+	std::cout << std::endl;
+	std::cout << std::right;
+	std::cout << std::setw(10) << "Index" << '|'
+			  << std::setw(10) << "FirstName:" << '|'
+			  << std::setw(10) << "LastName:" << '|'
+			  << std::setw(10) << "NickName:" << '|' << std::endl;
+	for (int i = 0; i < 8; i++) {
+		if (people[i].is_null) {
+			std::cout << std::setw(10) << people[i].index << '|'
+					  << std::setw(10) << truncate(people[i].first_name) << '|'
+					  << std::setw(10) << truncate(people[i].last_name) << '|'
+					  << std::setw(10) << truncate(people[i].nick_name) << '|' << std::endl;
+		}
+	}
+	std::cout << std::endl;
 }
 
 void	Book::info_serch(std::string cindex){
