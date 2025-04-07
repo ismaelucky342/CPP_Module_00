@@ -6,12 +6,17 @@
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/11 18:15:19 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/04/07 12:23:30 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef P_BOOK_HPP
 #define P_BOOK_HPP
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <readline/readline.h>
+#include <readline/history.h>
 
 /*=================================INCLUDES=================================*/
 

@@ -6,7 +6,7 @@
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/11 18:23:24 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/04/07 12:08:09 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,11 @@ void	Book::info_print(int index){
 }
 
 std::string truncate(const std::string &str){
-    return str.length() > 9 ? str.substr(0, 9) + "." : str;
+	if (str.length() > 9) {
+		return str.substr(0, 9) + ".";
+	} else {
+		return str;
+	}
 }
 
 void Book::print_agenda() {
