@@ -195,16 +195,6 @@ make
 
 ---
 
-**CPP Module 00** establishes the foundation for C++ programming, introducing essential concepts that will be built upon in subsequent modules. Master these basics to succeed in more advanced topics like inheritance, polymorphism, and template programming.
-
----
-*Born2code - 42 School*
-- Implement the Account Class: Create a class that handles the basic operations of a bank account, including creating accounts, making deposits and withdrawals, and managing global statistics.
-- Display Account Information: Implement methods to display the status of each account and global statistics about all accounts.
-- Manage Transaction Times: Include a function that displays the current timestamp for each transaction, helping to track when transactions are made.
-- Test Functionality: Develop a main program that creates multiple accounts, performs deposits and withdrawals, and then displays account information and global statistics.
-
-
 # Extras
 
 These exercises have provided a practical and in-depth understanding of several important aspects of C++ programming. Solutions to real-world problems have been implemented, from basic string and data structure manipulation to the simulation of more complex financial transactions. Each exercise contributed to the development of key skills in program design, data management, and user interaction. The experience gained in these exercises provides a solid foundation for tackling more advanced programming challenges and developing more complex applications in C++.
