@@ -1,3 +1,4 @@
+<img width="888" height="246" alt="imagen" src="https://github.com/user-attachments/assets/0c6b61c8-3cbd-4cf9-ba1c-57fab534eac6" />
 
 # CPP Module 00 - Introduction to C++
 
